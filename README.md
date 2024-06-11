@@ -10,20 +10,17 @@ gitiguinore
 touch .gitignore
 </code>
 
+sh gitiginore
 <code>
 cat <<EOL >> .gitignore
 //Ignorar diretório node_modules
 node_modules
-
 //Ignorar arquivos de log
 *.log
-
 //Ignorar arquivos de package-lock.json
 package-lock.json
-
 //Ignorar arquivos de yarn.lock
 yarn.lock
-
 //Ignorar arquivos de configuração de ambiente
 .env
 EOL
