@@ -1,0 +1,42 @@
+{
+  "name": "service_assinador",
+  "version": "1.0.0",
+  "main": "produt/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "cli": "bash ./cli/inicial.sh",
+    "dev": "NODE_ENV=dev ts-node-dev -r dotenv/config ./src/server.ts",
+    "start": "NODE_ENV=prod node -r dotenv/config ./produt/server.js",
+    "format": "prettier . --write && eslint  --fix .",
+    "chek": "prettier . --check"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.6",
+    "prettier": "3.3.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
