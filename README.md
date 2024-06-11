@@ -12,19 +12,19 @@ touch .gitignore
 
 <code>
 cat <<EOL >> .gitignore
-# Ignorar diretório node_modules
+//Ignorar diretório node_modules
 node_modules
 
-# Ignorar arquivos de log
+//Ignorar arquivos de log
 *.log
 
-# Ignorar arquivos de package-lock.json
+//Ignorar arquivos de package-lock.json
 package-lock.json
 
-# Ignorar arquivos de yarn.lock
+//Ignorar arquivos de yarn.lock
 yarn.lock
 
-# Ignorar arquivos de configuração de ambiente
+//Ignorar arquivos de configuração de ambiente
 .env
 EOL
 </code>
