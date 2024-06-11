@@ -5,10 +5,10 @@ dependencias
 <code>npm i axios cors dotenv express</code>
 
 gitiguinore
-
 <code>
 touch .gitignore
 </code>
+
 
 sh gitiginore
 <code>
@@ -25,6 +25,7 @@ yarn.lock
 .env
 EOL
 </code>
+
 
 prettier
 <code>npm install --save-dev --save-exact prettier</code>
