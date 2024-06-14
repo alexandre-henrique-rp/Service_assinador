@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "cli": "bash ./cli/inicial.sh",
-    "dev": "NODE_ENV=dev ts-node-dev -r dotenv/config ./src/server.ts",
+    "dev": "NODE_ENV=dev ts-node-dev -r dotenv/config ./src/index.ts",
     "start": "NODE_ENV=prod node -r dotenv/config ./produt/server.js",
     "format": "prettier . --write && eslint 'src/**/*.ts' --fix",
     "check": "prettier . --check"

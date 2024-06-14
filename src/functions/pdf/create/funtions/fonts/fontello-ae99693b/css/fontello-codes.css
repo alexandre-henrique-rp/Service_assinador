@@ -1,0 +1,6 @@
+
+.icon-user-plus:before { content: '\2b'; } /* '+' */
+.icon-ok-circled2:before { content: '\43'; } /* 'C' */
+.icon-users:before { content: '\55'; } /* 'U' */
+.icon-ok:before { content: '\63'; } /* 'c' */
+.icon-user:before { content: '\75'; } /* 'u' */
