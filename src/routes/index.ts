@@ -7,6 +7,6 @@ RootRoutes.get('/', (req, res) => {
   return res.json({ message: 'Hello World' });
 });
 
-RootRoutes.get('/pdf', PdfController.PdfCreate);
+RootRoutes.get('/manifesto', PdfController.PdfCreate);
 
 export default RootRoutes;
