@@ -1,11 +1,12 @@
-import { QRCode } from './funtions/qrcode';
-import ConteudoPdf from './funtions/conteudo';
+import { QRCode } from './functions/qrcode';
+import ConteudoPdf from './functions/conteudo';
+import { TDocumentDefinitions } from 'pdfmake/interfaces';
 
 
-export default function CreatePdf(dados: any) {
+export default function CreatePdf(dados: any): TDocumentDefinitions {
  
-  const urlStrng = dados.urlConsulta;
-  const qrCodeSting: any = QRCode(urlStrng);
+  const urlString = dados.urlConsulta;
+  const qrCodeSting: any = QRCode(urlString);
 
   const conteudo = ConteudoPdf({
     dataAss: dados.assinaturas.assinantes,
@@ -15,7 +16,7 @@ export default function CreatePdf(dados: any) {
     uuid: dados.uuid,
   });
  
-  const docDefinition = {
+  const docDefinition: TDocumentDefinitions = {
     pageSize: 'A4',
     pageOrientation: 'portrait',
     pageMargins: [10, 30, 10, 10],
@@ -35,12 +36,6 @@ export default function CreatePdf(dados: any) {
     },
   };
 
- //  const  pdfDoc  =  printer.createPdfKitDocument(docDefinition);
-
-  // pdfDoc.pipe(fs.createWriteStream(path.resolve(__dirname, './qrCode.pdf')));
-  // pdfDoc.end();
-
-  // retornar o pdfDoc para o controller
   return docDefinition
   
 }
